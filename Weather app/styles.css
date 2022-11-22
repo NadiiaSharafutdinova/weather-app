@@ -1,0 +1,113 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  max-width: 800px;
+  padding-top: 30px;
+  padding-left: 35px;
+}
+/*Header styles*/
+header .list {
+  display: flex;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.chosen-city {
+  margin-right: 50px;
+}
+.chosen-city:last-child {
+  margin-right: 0;
+}
+/*hero styles*/
+.hero {
+  background-image: url(./image/bg-hero.jpg);
+  height: 400px;
+  background-size: fill;
+  background-position: 75% 60%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+form {
+  padding-top: 10px;
+  text-align: center;
+}
+.go-button {
+  background-color: #5a6275;
+  color: #fff;
+}
+/*main styles*/
+.col-8 {
+  text-align: center;
+}
+.col-4 {
+  text-align: right;
+}
+.card:nth-child(odd) {
+  background-color: #5a6275;
+  color: #fff;
+}
+.card {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 20px;
+}
+.current-temperature {
+  padding-top: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.limit-temperature {
+  font-size: 18px;
+}
+.features {
+  padding-top: 20px;
+  text-align: left;
+}
+.more {
+  display: inline-block;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #5a6275;
+}
+.col-6 {
+  text-align: center;
+}
+.col-6:hover,
+.col-6:focus {
+  background-color: #5a6275;
+  border-radius: 10px;
+}
+.more:hover,
+.more:focus {
+  color: #fff;
+}
