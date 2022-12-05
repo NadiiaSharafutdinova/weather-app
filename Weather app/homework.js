@@ -38,4 +38,20 @@ let weather = {
       `Sorry we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`
     );
   }
-  
+  let currentDate = new Date();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let day = days[currentDate.getDay()];
+
+let hour = currentDate.getHours();
+let minute = currentDate.getMinutes();
+let nowTime = document.querySelector(".time");
+nowTime.innerHTML = `${day}, ${hour}:${minute}`;
+
+function displayCity(event){
+  event.preventDefault();
+  let cityInput = document.querySelector("#city-input");
+  let currentCity = document.querySelector("h1");
+  currentCity.innerHTML = cityInput.value;
+}
+let search = document.querySelector(".search-form");
+search.addEventListener("submit", displayCity)
